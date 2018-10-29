@@ -96,26 +96,31 @@
 <br>
 
 
+
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
-       <img src="html.png" width="100" height="140">
+ <a class="col-sm-4 block-link" href="#">
+    <div class="thumbnail">
+      <img src="html.png" width="100" height="140">
       <h3>HTML5</h3>
-      <p>Lorem ipsum dolor..</p>
     </div>
-    <div class="col-sm-4">
-       <img src="css.png" width="100" height="140">
+
+ <a class="col-sm-4 block-link" href="#">
+  <div class="thumbnail">
+     <img src="css.png" width="100" height="140">
       <h3>CSS</h3>
-      <p>Lorem ipsum dolor..</p>
+
     </div>
-    <div class="col-sm-4">
-       <img src="bs.png" width="140" height="140">
+ <a class="col-sm-4 block-link" href="#">
+    <div class="thumbnail">
+    <img src="bs.png" width="140" height="140">
       <h3>Bootstrap</h3>
-      <p>Lorem ipsum dolor..</p>
     </div>
+
   </div>
 </div>
 <hr>
+
 
 <div class="container">
 <div class="row">

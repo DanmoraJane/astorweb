@@ -1,6 +1,12 @@
 .navbar {
     background-color: black !important;
 }
+
+
+.block-link {
+    display: block;
+
+}
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
@@ -17,9 +23,25 @@
 		transform: translateY(-5px);
 	}
 }
-a:hover {
+
+.block-link:hover, .block-link:active{
+  color:black;
+  text-decoration: none;
+}
+
+.nav-link{
+color: white;
+font-size: 20px;
+}
+
+.nav-link:hover, .nav-link:active{
+  color:lightgray;
+  text-decoration: none;
+}
+.nav-link:hover {
 	animation: bounce 1s;
 }
+
  p, H3{
   font-family: 'Krub', sans-serif;
   text-align: center;
@@ -35,10 +57,12 @@ img {
       margin-left: auto;
       margin-right: auto;
 }
+
 div {
 font-family: 'Krub', sans-serif;
 font-size: 20px;
 }
+
 .sign {
 font-family: 'Krub', sans-serif;
 font-size: 20px;
@@ -78,13 +102,4 @@ font-family: 'Krub', sans-serif;
 }
 .form-group{
 font-family: 'Krub', sans-serif;
-}
-a {
-color: white;
-font-size: 20px;
-}
-
-a:hover, a:active{
-  color:lightgray;
-  text-decoration: none;
 }
