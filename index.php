@@ -1,4 +1,4 @@
-<!DOCTYPE html>blablabla
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>My Webpage</title>
