@@ -98,25 +98,38 @@
 
 
 <div class="container">
-  <div class="row">
- <a class="col-sm-4 block-link" href="#">
+  <div class="row justify-content-around">
+ <a class="col-sm-3 block-link" href="#">
+
+
     <div class="thumbnail">
-      <img src="html.png" width="100" height="140">
+      <div class="zoom">
+      <img class="image" src="html.png" width="100" height="140">
+    </div>
+      <hr>
       <h3>HTML5</h3>
     </div>
+</a>
+ <a class="col-sm-3 block-link" href="contacts.php">
 
- <a class="col-sm-4 block-link" href="#">
   <div class="thumbnail">
-     <img src="css.png" width="100" height="140">
+    <div class="zoom">
+     <img class="image" src="css.png" width="100" height="140">
+   </div>
+         <hr>
       <h3>CSS</h3>
-
     </div>
- <a class="col-sm-4 block-link" href="#">
+    </a>
+ <a class="col-sm-3 block-link" href="#">
+
     <div class="thumbnail">
-    <img src="bs.png" width="140" height="140">
+      <div class="zoom">
+    <img class="image" src="bs.png" width="140" height="140">
+  </div>
+        <hr>
       <h3>Bootstrap</h3>
     </div>
-
+</a>
   </div>
 </div>
 <hr>

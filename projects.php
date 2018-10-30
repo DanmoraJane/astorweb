@@ -56,50 +56,31 @@
       </div>
   </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-       <img src="html.png" width="100" height="140">
-      <h3>HTML5</h3>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-    <div class="col-sm-4">
-       <img src="css.png" width="100" height="140">
-      <h3>CSS</h3>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-    <div class="col-sm-4">
-       <img src="bs.png" width="140" height="140">
-      <h3>Bootstrap</h3>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-</div>
-<hr>
 
-<div class="container">
-<div class="row">
-    <div class="col-sm-6">
-      <p class="column">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-sm-6">
-       <img src="bs.png" width="400" height="400">
-    </div>
-  </div>
+<div id="content">
+  <?php
+  $db = mysqli_connect("localhost", "root", "", "astorweb");
+  $sql = "SELECT * FROM images";
+  $result = mysqli_query($db, $sql);
+  while ($row = mysqli_fetch_array($result))
+  {
+    echo "<div id='img_div'>";
+      	echo "<img class ='formm' src='uploads/".$row['image']."' >";
+        echo "<br>";
+        echo "<p>".$row['name']."</p>";
+        echo "<p>".$row['category']."</p>";
+        echo "<p>".$row['description']."</p>";
+      echo "</div>";
+  }
+   ?>
+<form class="form1" action="upload.php" method="POST" enctype="multipart/form-data">
+<input type="text" name="name" placeholder="Image name...">
+<input type="text" name="category" placeholder="Image category...">
+<input type="text" name="description" placeholder="Image description...">
+<input type="file" name="image">
+<input type="submit" name="submit">UPLOAD</button></form>
 </div>
-<hr>
 
-<div class="container">
-<div class="row">
 
-    <div class="col-sm-6">
-       <img src="bs.png" width="400" height="400">
-    </div>
-    <div class="col-sm-6">
-      <p class="column">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-  </div>
-</div>
-<hr>
 </body>
 </html>
